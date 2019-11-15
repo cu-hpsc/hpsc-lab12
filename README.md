@@ -20,7 +20,7 @@ The goals for this lab are:
 Whenever anything is automated it will likely not be as efficient as gritter custom-tuning.  However, Dask offers fast cluster expansion with minimal development overhead.
 
 It filled a gap between these categories:
-* embarassingly parallel (e.g. `multiprocessing`): doesn't scale past local, no collaboration
+* embarrassingly parallel (e.g. `multiprocessing`): doesn't scale past local, no collaboration
 * big data collections (e.g., MapReduce, SQL): pre-defined operation paradigms, heavyweight
 * task schedulers (e.g. Celery, Make): not designed for user-interaction or heavy computation
 
@@ -83,4 +83,4 @@ with joblib.parallel_backend('dask'):
     estimator.fit(Xr, yr)
 ```
 
-This is one of Dask's solutions for parallelizing sklearn.  You should be able to observer the Dask task stream monitor scheduling across 4 threads.  You probably won't notice any difference in time, because joblib (used by sklearn) will schedule across processors on the local node by default.  But if you had a cluster to run on, you wouldn't need to change any other code (just set up the clients across the cluster)!
+This is one of Dask's solutions for parallelizing sklearn.  You should be able to observe the Dask task stream monitor scheduling across 4 threads.  You probably won't notice any difference in time, because joblib (used by sklearn) will schedule across processors on the local node by default.  But if you had a cluster to run on, you wouldn't need to change any other code (just set up the clients across the cluster)!
