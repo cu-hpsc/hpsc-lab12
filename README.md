@@ -7,6 +7,7 @@ The goals for this lab are:
 * Learn about Dask
 * Fit a Gaussian process model using sklearn
 * Run sklearn cross-validated hyperparameter grid search on Dask
+* Be amazed at how easy it is to parallelize python code!
 
 -----
 
