@@ -83,4 +83,4 @@ with joblib.parallel_backend('dask'):
     estimator.fit(Xr, yr)
 ```
 
-You should be able to observer the Dask task stream monitor scheduling across 4 threads.  You probably won't notice any difference in time, because joblib (used by sklearn) will schedule across processors on the local node by default.  But if you had a cluster to run on, you wouldn't need to change any other code (just set up the clients across the cluster)!
+This is one of Dask's solutions for parallelizing sklearn.  You should be able to observer the Dask task stream monitor scheduling across 4 threads.  You probably won't notice any difference in time, because joblib (used by sklearn) will schedule across processors on the local node by default.  But if you had a cluster to run on, you wouldn't need to change any other code (just set up the clients across the cluster)!
