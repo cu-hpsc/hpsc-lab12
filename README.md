@@ -1,7 +1,7 @@
 # HPSC Lab 12
 2019-11-15
 
-Click to [make your own repo](TO DO).
+Click to [make your own repo](https://classroom.github.com/a/wbNxcTOJ).
 
 The goals for this lab are:
 * Learn about Dask
